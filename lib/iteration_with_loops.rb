@@ -7,14 +7,15 @@ def join_nested_strings(src)
     
     while element_index < src[row_index].count do 
       if src[row_index][element_index].class == String
-       new_string << src[row_index][element_index]
+         src[row_index][element_index].concat
        
       end 
       element_index += 1 
     end 
-    return new_string
+    new_string << src[row_index][element_index]
     row_index += 1 
   end
+  new_string
 end
 
   # src will be an Array of Arrays of Strings and Integers
