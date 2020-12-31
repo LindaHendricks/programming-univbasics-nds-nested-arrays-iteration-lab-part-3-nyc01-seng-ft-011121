@@ -3,12 +3,13 @@ def join_nested_strings(src)
   
   while row_index < src.count do 
     element_index = 0 
-    
+    new_string = " "
     
     while element_index < src[row_index].count do 
-      new_string = " "
+      
       if src[row_index][element_index] == String
-         puts new_string << src[row_index][element_index]
+       #new_string << src[row_index][element_index]
+       puts "Do I print to the screen at all?"
       end 
       element_index += 1 
     end 
